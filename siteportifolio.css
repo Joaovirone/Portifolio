@@ -12,11 +12,29 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: large;
+}
+
+.imagem1{
+    max-width: 880px;
+    margin-left: 80px;
+    
+}
+
+.eu{
+    display: inline-block;
+}
+
+#alinhar {
+    display: inline;
+    flex-direction: row;
+    font-size: larger;
 }
 
 #title{
 flex-direction: column;
 line-height: 10px ;
+font-size: large;
 }
 
 li{
@@ -42,6 +60,7 @@ a:hover{
 h1{
     font-size: 40px;
     font-weight: 200;
+    font-style: inherit;
 }
 
 main{
@@ -84,10 +103,10 @@ form [type="submit"]{
 }
 
 input{
-    margin-top: 20px;
-    height: 20px;
+    margin-top: 25px;
+    height: 25px;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 30px;
     border: none;
     font-size: 15px;
 }
@@ -100,6 +119,18 @@ input{
 .meio{
     display: flex;
     flex-direction: row;
+    font-size: larger;
+    margin-top: 80px;
+}
+
+.meio_esquerdo{
+    font-style:inherit
+}
+
+.meio_direita{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    max-width: 800px;
 }
 
 .btn{
@@ -118,6 +149,7 @@ input{
     font-size: 1.4rem;
 }
 
+
 .about{
     display: flex;
     padding-right: 20px;
@@ -130,17 +162,26 @@ input{
 .about_left{
     width: 45%;
     margin-right: 25px;
+    font-size: larger;
+}
+
+.about_right{
+    margin-top: 5%;
+    font-size: larger;
 }
 
 .skills_content{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 .description{
     text-align: center;
     max-width: 100%;
+    font-size: larger;
 }
 
 .skills_content{
@@ -159,23 +200,27 @@ input{
 
 .projects p{
     max-width: 100%;
+    
 }
 
 .element1{
     display: flex;
     flex-direction: row;
+    font-size: larger;
     
 }
 
 .element2{
     display: flex;
     flex-direction: row-reverse;
+    font-size: larger;
     
 }
 
 .element3{
     display: flex;
     flex-direction: row;
+    font-size: larger;
 }
 
 .divisao{
@@ -198,7 +243,9 @@ input{
 }
 
 .mb-m{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    display: block;
+    font-size: larger;
 }
 
 .mb-1{
@@ -207,11 +254,13 @@ input{
 
 .footer{
     margin-top: -20%;
+    font-size: larger;
 }
 
 .footer_content{
     display: flex;
     flex-direction: row;
+    font-size: larger;
 }
 
 @media only screen and (max-width:1024px){
@@ -238,12 +287,43 @@ html{
         font-size: 4.2rem;
     }
 }
+
+
 .element1 img{
-    max-width: 350px;
+    max-width: 250px;
+    margin-bottom: 80px;
 }
 .element2 img{
     max-width: 350px ;
+    margin-bottom: 80px;
 }
 .element3 img{
-    max-width: 350px;
+    max-width: 250px;
+    margin-bottom: 80px;
+}
+
+.iten1{
+   font-size: larger;
+}
+
+.iten2{
+    font-size: larger;
+}
+
+.iten3{
+    font-size: larger;
+}
+
+
+.projects_content{
+    margin-bottom: 100px;
+    font-size: larger;
+}
+.pau{
+    font-size: larger;
+}
+
+.caixa{
+    font-size: larger;
+    margin-top: 6%;
 }
