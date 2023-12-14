@@ -33,11 +33,7 @@ function calculadora(){
         
     }
     calculadora();
-    let var1 = 2;
-    let var2 = 3;
-
-
-    console.log(soma(var1,var2));
+    
 
 
 function soma(x,y){
