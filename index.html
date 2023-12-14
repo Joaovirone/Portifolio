@@ -8,31 +8,37 @@
 <link rel="stylesheet" href="siteportifolio.css">
 <body>
     <header>
-        <div id="title">
+        <div id="title" class="titulo">
             <h1>Portifólio de</h1>
             <h1>Programação</h1>
         </div>
+        
         <ul class="navbar_links">
-            <a href="#inicio"><li>Início</li></a>
-            <a href="#about"><li>Sobre</li></a>
-            <a href="#fale_conosco"><li>Fale Comigo</li></a>
+            <div class="itens1"><a href="#inicio"><li>Início</li></a></div>
+            <div class="itens2"><a href="#about"><li>Sobre</li></a></div>
+            <div class="itens3"><a href="#fale_conosco"><li>Fale Comigo</li></a></div>
+            <div class="itens4"><a href="#projeto"><li>Projetos</li></a></div>
         </ul>
+         
     </header>
     <main>
         <aside>
             <h2><span>Quer saber mais sobre ?</span></h2>
             <h2>Entre em contato comigo</h2>
+        <div id = "alinhar">
             <p>
                 Com isto poderei discutir e barganhar sobre projetos futuros!
             </p>
+        </div>
             <div class="form_image">
             <form>
                 <input type="text" placeholder="Nome">
                 <input type="text" placeholder="Email">
                 <input type="submit" value="Enviar">
             </form>
-
-            <img src="projeto1.jpg" alt="project1">
+        <div class="imagem1">
+            <img src="projeto2.jpg" alt="project2">
+        </div>
         </div>
         </aside>
         <div id="Inicio" class="meio">
@@ -40,6 +46,8 @@
                 <h1>Olá! Me chamo João Vitor
                     desenvolvedor full stack
                 </h1>
+            </div>
+            <div>
                 <p>
                     Desenvolvedor web full stack e amante de tecnologia, soluciono problemas de maneiras
                     práticas e que acabam tornando a vida do usuário mais imersiva e responsiva. 
@@ -47,7 +55,7 @@
                 <a class="btn button-primary" href="#about">Saiba Mais</a>
             </div>
             <div class="meio_direita">
-                <img src="projeto2.jpg" alt="projeto">
+                <img src="projeto1.jpg" alt="prj1">
             </div>
         </div>
     <section id="about" class="about max-width">
@@ -56,6 +64,9 @@
 
         <div id="about" class="about_left">
             <h2 class="secondary-title">Além da programação: Quem sou eu?:</h2>
+            <div class="eu">
+                <img src="velho.webp" alt="eu">
+            </div>
             <p>
                 Apaixonado por jogos eletrônicos e tecnologia desde sempre. 
             </p>
@@ -81,7 +92,9 @@
     </section>
     <section id="skills" class="skills">
         <div class="skills_content max width">
+        <div class="caixa">
             <h2 class="fourth-title">Minha caixinha de ferramentas</h2>
+        </div>
             <p class="description">
                 Descubra as habilidades e ferramentas que domino e que me permitem
                 criar soluções criativas e funcionais para meus clientes.
@@ -112,29 +125,33 @@
 
     <section id="projects" class="projects max-width">
 
-        <div class="projects_content">
+        <div class="projects_content" id="projeto">
             <h2 class="secondary-title">
                 Projetos em Destaque
             </h2>
+        <div class="pau">
             <p>
                 De ideias abstratas a projetos bem-sucedidos, aqui estão alguns dos
                 meus trabalhos mais recentes
             </p>
         </div>
+        </div>
         <ul>
             <li class="element1">
                 <div class="image">
-                    <img src="calculadora1.webp" alt="teta">
+                    <img src="calculadora1.png" alt="teta">
                 </div>
                 <div class="project_info">
                     <h3>
                         Calculadora em JavaScript
                     </h3>
+                <div class="iten1">
                     <p>
                         Calculadora feita em JavaScript, que a partir do prompt o usuário escolhe o tipo 
                         de operação (soma, subtracao, produto e divisao) e põe os valores, 
-                        obetendo os resultados.
+                        obetendo os resultados no console.log.
                     </p>
+                </div>
                     <a href="calculadora.html" href="calculadora.js">Leia mais &rarr;</a>
                 </div>
             </li>
@@ -146,24 +163,30 @@
                     <h3>
                         Site de vendas de carros - FRONT--END
                     </h3>
+                <div class="iten2">
                     <p>
-                        Um site que demonstra se o carro que o cliente quer está alugado ou não.
+                        Um site que demonstra se o carro que o cliente quer está alugado ou não,
+                        apesar de simples ele não foi completamente concluído, uma ideia abstrata que
+                        possívelmente no futuro pode vir a se concretizar um site consolidado.
                     </p>
+                </div>
                     <a href="CARROS.html">Leia mais &rarr;</a>
                 </div>
             </li>
             <li class="element3">
                 <div class="image">
-                    <img src="imc1.jfif" alt="teta">
+                    <img src="IMC1.jpg" alt="teta">
                 </div>
                 <div class="project_info">
                     <h3>
                         Índice de Massa Corporal feita em JavaScript - IMC
                     </h3>
+                <div class="iten3">
                     <p>
                         BACK-END, que a partir do prompt, colocar os valores que são pedidos na janela, assim
                         obtendo o resultado do IMC (normal, sobrepeso,...)
                     </p>
+                </div>
                     <a href="IMC.html" href="IMC.css" href="IMC.js">Leia mais &rarr;</a>
                 </div>
             </li>
@@ -181,8 +204,8 @@
                 trabalhar juntos para torná-los realidade.
             </p>
             <div class="footer-contact mb-m">
-                <span class="mb-m">jovmamikl@gmail.com</span>
-                <span>79 98865-9849</span>
+                <span class="mb-m">Email: jovmamikl@gmail.com</span>
+                <span>Telefone: (55) 79 98865-9849</span>
             </div>
                    
             <p class="footer_copyright">
