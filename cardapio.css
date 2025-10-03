@@ -153,28 +153,26 @@
             display: block;
 
         }
-        footer button {
+
+        .btn-voltar {
+                display: inline-block;
                 margin-top: 15px;
                 padding: 14px 28px;
-                border: none;
-                background: #2d6187; /* cor vibrante (pode trocar para a que preferir no cardápio) */
+                background: #2d6187; /* cor principal */
                 color: #fff;
                 font-size: 1rem;
                 font-weight: bold;
                 border-radius: 10px;
+                text-decoration: none;
                 cursor: pointer;
                 transition: all 0.3s ease;
                 box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        }
-
-        footer button:hover {
-                background: #2d6187; /* tom mais escuro no hover */
-                transform: translateY(-3px); /* efeito de "subir" */
+                }
+        
+        .btn-voltar:hover {
+                background: #1a4d6d;
+                transform: translateY(-3px);
                 box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+                }
         }
 
-        footer a {
-                color: #fff;
-                text-decoration: none;
-                display: block;
-        }
