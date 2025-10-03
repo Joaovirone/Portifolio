@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio CEEP JFB</title>
+    
+</head>
+   <link rel="stylesheet" href="cardapio.css" />
+<body>
+    <div class="container">
+        <h1>Lanchonete <br>CEEP José Figueiredo Barreto</h1>
+        <ul class="navbar_links">
+            <li onclick="showCategory('salgados')">Salgados/<br>Sanduíches</li>
+            <li onclick="showCategory('gelados')">Doces/<br>Gelados</li>
+            <li onclick="showCategory('bebidas')">Bebidas</li>
+        </ul>
+        <ul class="menu" id="menuList">
+            <li class="menu-category show" id="salgados">
+                <h2>Salgados e Sanduíches</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="img/coxinha.jpg" alt="Coxinha">
+                        <div class="item-info">
+                            <strong>Coxinha</strong>
+                        </div>
+                        <div class="item-price">R$ 5,00</div>
+                        <div class="description">Deliciosa coxinha de frango: recheio suculento, massa crocante e frescura garantida.</div>
+                    </div>
+                     <div class="menu-item">
+                        <img src="img/enroladinho.jpg" alt="Enroladinho">
+                        <div class="item-info">
+                            <strong>Enroladinho de Forno</strong>
+                        </div>
+                        <div class="item-price">R$ 4,00</div>
+                        <div class="description">Delícia caseira: enroladinho de forno recheado com queijo, presunto e legumes, feito com amor.</div>
+                    </div>
+                     <div class="menu-item">
+                        <img src="img/Empada.png" alt="Empada">
+                        <div class="item-info">
+                            <strong>Empada</strong>
+                        </div>
+                        <div class="item-price">R$ 4,50</div>
+                        <div class="description">Sabor de casa: empada artesanal recheada com amor.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/Pastel.jpg" alt="Pastel">
+                        <div class="item-info"> 
+                            <strong>Pastel</strong>
+                        </div>
+                        <div class="item-price">R$ 4,00</div>
+                        <div class="description">Massa crocante, recheio suculento: nossa pastel é uma experiência.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/pizzabroto.jpg" alt="Pizza">
+                        <div class="item-info">
+                            <strong>Pizza Brotinho</strong>
+                        </div>
+                        <div class="item-price">R$ 5,00</div>
+                        <div class="description">Sabor em miniatura: pizza brotinho recheada com queijo, presunto e legumes.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/miojo.jpg" alt="Miojo">
+                        <div class="item-info">
+                            <strong>Miojo</strong>
+                        </div>
+                        <div class="item-price">R$ 3,00</div>
+                        <div class="description">Oportunidade perfeita para um lanche: miojo rápido e saboroso.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/pipoca.jpg" alt="Pipoca">
+                        <div class="item-info">
+                            <strong>Pipoca</strong>
+                        </div>
+                        <div class="item-price">R$ 2,50</div>
+                        <div class="description">Lanche rápido e divertido: pipoca para todos os momentos.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/burguer.jpg" alt="Hamburguer">
+                        <div class="item-info">
+                            <strong>Hambúrguer</strong>
+                        </div>
+                        <div class="item-price">R$ 6,00</div>
+                        <div class="description">Hambúrguer caseiro: feito com carinho e ingredientes selecionados.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/eggburguer.jpg" alt="eggburguer">
+                        <div class="item-info">
+                            <strong>Eggs-Burguer</strong>
+                        </div>
+                        <div class="item-price">R$ 9,00</div>
+                        <div class="description">Ovos, carne e queijo em perfeita harmonia.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/burgueramc.png" alt="Sanduíche">
+                        <div class="item-info">
+                            <strong>Americano</strong>
+                        </div>
+                        <div class="item-price">R$ 6,00</div>
+                        <div class="description">Hambúrguer autêntico: estilo americano, sabor inigualável.</div>
+                        </div>
+                    <div class="menu-item">
+                        <img src="img/xburguer.jpg" alt="xburguer">
+                        <div class="item-info">
+                            <strong>X-Burguer</strong>
+                        </div>
+                        <div class="item-price">R$ 7,00</div>
+                        <div class="description">X-Burguer: duas vezes mais sabor.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/paocovo.jpg" alt="Pao">
+                        <div class="item-info">
+                            <strong>Pão c/ Ovo</strong>
+                        </div>
+                        <div class="item-price">R$ 4,00</div>
+                        <div class="description">Pão com ovo: uma opção saudável e deliciosa.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/mistoquente.jpg" alt="Misto">
+                        <div class="item-info">
+                            <strong>Misto-Quente</strong>
+                        </div>
+                        <div class="item-price">R$ 6,00</div>
+                        <div class="description">Misto-Quente clássico: pão, queijo, presunto e frango.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/cahorroquente.png" alt="Cachorroquente">
+                        <div class="item-info">
+                            <strong>Cachorro-Quente</strong>
+                        </div>
+                        <div class="item-price">R$ 4,00</div>
+                        <div class="description">O clássico cachorro quente: nunca sai de moda.</div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="menu-category show" id="gelados">
+                <h2>Doces e Gelados</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="img/saladadefruta.jpg" alt="saladadefrutas">
+                        <div class="item-info">
+                            <strong>Salada de Frutas 150 mL, 300 ml</strong>
+                        </div>
+                        <div class="item-price">R$ 1,50 ~ R$ 3,00 </div>
+                        <div class="description">Salada de frutas para equilibrar seu dia.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/sorvete.jpg" alt="Sorvete">
+                        <div class="item-info">
+                            <strong>Sorvete</strong>
+                        </div>
+                        <div class="item-price">R$ 1,50 ~ 2,50</div>
+                        <div class="description">Delicioso sorvete para qualquer hora do dia.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/açaí.jpg" alt="Açaí">
+                        <div class="item-info">
+                            <strong>Açaí</strong>
+                        </div>
+                        <div class="item-price">R$ 6,00</div>
+                        <div class="description">Açaí com granola e banana.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/geladinho.jpg" alt="Geladinho">
+                        <div class="item-info">
+                            <strong>Geladinho</strong>
+                        </div>
+                        <div class="item-price">R$ 1,50</div>
+                        <div class="description">Refresque com nosso geladinho: opções de sabores variadas.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/fatiabolo.jpg" alt="bolo">
+                        <div class="item-info">
+                            <strong>Fatia de Bolo</strong>
+                        </div>
+                        <div class="item-price">R$ 3,00</div>
+                        <div class="description">Fatia de bolo clássico: chocolate, ovos ou ovos c/ chocolate.</div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="menu-category show" id="bebidas">
+                <h2>Bebidas</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="img/aguagas.jpg" alt="aguagas">
+                        <div class="item-info">
+                            <strong>Água</strong>
+                        </div>
+                        <div class="item-price">R$ 3,00</div>
+                        <div class="description">Com gás e Sem Gás.</div>
+                    </div>
+                     <div class="menu-item">
+                        <img src="img/cafe.webp" alt="Cafe">
+                        <div class="item-info">
+                            <strong>Café 150 mL, 300 mL</strong>
+                        </div>
+                        <div class="item-price">R$ 1,00 ~ R$ 2,00</div>
+                        <div class="description">Desperte com nosso café: energize seu dia.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/guarana.jpg" alt="Refrigerante">
+                        <div class="item-info">
+                            <strong>Refrigerante Guaraná 1L, 2L</strong>
+                        </div>
+                        <div class="item-price">R$ 4,50 ~ R$7,50</div>
+                        <div class="description">Sabor brasileiro: refrigerante Guaraná.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/refri.jpg" alt="Refrilata">
+                        <div class="item-info">
+                            <strong>Refrigerante em Lata 350 mL</strong>
+                        </div>
+                        <div class="item-price">R$ 5,00</div>
+                        <div class="description">refrescante e prático.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/guaramix.webp" alt="Guaramix">
+                        <div class="item-info">
+                            <strong>Refrigerante Guaramix 250 mL</strong>
+                        </div>
+                        <div class="item-price">R$ 2,50</div>
+                        <div class="description">Guaramix: o refrigerante que combina tudo.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/pitchulinha.jpg" alt="Pitchulinha">
+                        <div class="item-info">
+                            <strong>Refrigerante Pitchulinha 250 mL</strong>
+                        </div>
+                        <div class="item-price">R$ 2,00</div>
+                        <div class="description">O sabor da infância: Pitchulinha, o clássico.</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/suco.jpg" alt="Suco">
+                        <div class="item-info">
+                            <strong>Suco Natural 150 mL , 300 mL </strong>
+                        </div>
+                        <div class="item-price">R$ 1,00 ~ R$ 2.00 </div>
+                        <div class="description">Suco 100% natural: saúde em cada gota.</div>
+                    </div>
+        
+                </div>
+        </ul>
+        <footer>
+        <p> @JVHNR Direitos Reservados - 2025</p>
+        </footer>
+    </div>
+    
+    <script src= "cardapio.js"></script>
+</body>
+    
+</html>
