@@ -3,169 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>João Vitor | Desenvolvedor Fullstack</title>
+  <title>João Vitor | Dev Fullstack</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="styles/portfolio.css">
-  
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/siteportifolio.css">
 </head>
 <body>
 
+  <div class="bg-animated"></div>
+
   <header>
     <div class="container">
-      <h1>Portfólio.Dev</h1>
-      <ul class="navbar_links">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#fale_conosco">Contato</a></li>
-      </ul>
+        <nav class="navbar" data-aos="fade-down">
+            <h2>Portfólio<span style="color:#ec4899">.Dev</span></h2>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#fale_conosco" class="btn-contact">Contato</a></li>
+            </ul>
+        </nav>
     </div>
   </header>
   
   <main>
     <section id="inicio" class="hero">
-      <div class="hero_content">
-        <div class="hero_text">
-          <h2>Olá, eu sou João Vitor</h2>
-          <p>
-            Desenvolvedor apaixonado por tecnologia. Atualmente focado em criar soluções completas (Fullstack), 
-            unindo a interatividade do JavaScript com a robustez do Java no Backend. 
-            Sempre busco código limpo, inovação e simplicidade.
-          </p>
-          <a href="#fale_conosco" class="btn-primary">Entre em Contato</a>
-        </div>
-        <div class="hero_img">
-          <img src="img_tools/joao.jpeg" alt="Foto de João Vitor">
+      <div class="container">
+        <div class="hero-flex">
+            <div class="hero-text" data-aos="fade-right">
+                <span class="tag">Fullstack Developer</span>
+                <h2>Olá, sou <br> <span class="gradient-text">João Vitor</span></h2>
+                <p>Desenvolvedor apaixonado por tecnologia. Unindo a interatividade do JavaScript com a robustez do Java Spring Boot.</p>
+                <div class="btns-wrapper">
+                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                    <a href="https://github.com/Joaovirone" target="_blank" style="color: #1e293b; font-weight:600; display:flex; align-items:center; gap:5px;"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="hero-img" data-aos="zoom-in">
+                <img src="img_tools/joao.jpeg" alt="Foto João Vitor">
+            </div>
         </div>
       </div>
     </section>
 
     <section id="skills" class="skills">
-      <h2>Tech Stack</h2>
-      <ul>
-        <li class="skills_item">
-          <img src="img_tools/html_foto.png" alt="HTML5">
-          <p>HTML5</p>
-        </li>
-        <li class="skills_item">
-          <img src="img_tools/css_foto.png" alt="CSS3">
-          <p>CSS3</p>
-        </li>
-        <li class="skills_item">
-          <img src="img_tools/Javascript_foto.png" alt="JavaScript">
-          <p>JavaScript</p>
-        </li>
-        <li class="skills_item">
-          <img src="img_tools/java_foto.png" alt="Java">
-          <p>Java</p>
-        </li>
-        <li class="skills_item">
-          <img src="img_tools/python_foto.png" alt="Python">
-          <p>Python</p>
-        </li>
-        <li class="skills_item">
-            <i class="fas fa-database fa-3x" style="color: #4f46e5; margin-bottom: 10px;"></i>
-            <p>SQL</p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Tech <span class="gradient-text">Stack</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img_tools/html_foto.png" alt="HTML">
+                <p>HTML5</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="img_tools/css_foto.png" alt="CSS">
+                <p>CSS3</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="img_tools/Javascript_foto.png" alt="JS">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="img_tools/java_foto.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="img_tools/python_foto.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                <i class="fas fa-database" style="color: #4f46e5; font-size: 50px;"></i>
+                <p>SQL</p>
+            </div>
+        </div>
+      </div>
     </section>
     
-    <section id="projetos" class="projetos_section">
-      <div class="projetos_container">
-        <h2>Projetos em Destaque</h2>
-        <div class="grid_projetos">
+    <section id="projetos" class="projects">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Projetos <span class="gradient-text">Recentes</span></h2>
+        
+        <div class="projects-grid">
+            
+            <article class="project-card" data-aos="fade-up">
+                <div class="card-img">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="card-content">
+                    <span class="tag">Backend</span>
+                    <h3>InvestTracker-API</h3>
+                    <p style="font-size: 0.9rem; color: #64748b; margin: 10px 0;">API REST para consumo e integração de dados de investimentos com Spring Boot e Docker.</p>
+                    <a href="https://github.com/Joaovirone/InvestTracker-API" style="color:#ec4899; font-weight:700;">Ver Código &rarr;</a>
+                </div>
+            </article>
 
-          <article class="card_projeto">
-            <div class="card_img_wrapper">
-               <i class="fas fa-server backend-icon"></i> 
-            </div>
-            <div class="card_info">
-              <div>
-                  <h3>Finteh-API</h3>
-                  <span class="tech-tag">Java • Spring Boot • API REST </span>
-                  <p>Sistema backend robusto para transações financeiras. Desenvolvido com arquitetura em camadas, validações de segurança e integração com banco de dados.</p>
-              </div>
-              <a href="https://github.com/Joaovirone/fintech-api" target="_blank" class="btn-link">Ver no GitHub <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </article>
+            <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-img">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="card-content">
+                    <span class="tag">Backend</span>
+                    <h3>Finteh-API</h3>
+                    <p style="font-size: 0.9rem; color: #64748b; margin: 10px 0;">Sistema robusto para transações financeiras com validações de segurança e PostgreSQL.</p>
+                    <a href="https://github.com/Joaovirone/fintech-api" style="color:#ec4899; font-weight:700;">Ver Código &rarr;</a>
+                </div>
+            </article>
 
-          <article class="card_projeto">
-            <div class="card_img_wrapper">
-               <i class="fas fa-server backend-icon"></i> 
-            </div>
-            <div class="card_info">
-              <div>
-                  <h3>InvestTracker-API</h3>
-                  <span class="tech-tag">Java • Spring Boot • API REST • Integração de APIs</span>
-                  <p>API REST desenvolvida em Java com Spring Boot com foco no consumo e integração de APIs externas para obtenção de dados de investimentos. 
-O projeto aplica arquitetura em camadas, validação de dados, documentação com Swagger (OpenAPI) e execução via Docker, 
-seguindo boas práticas de desenvolvimento backend.</p>
-              </div>
-              <a href="https://github.com/Joaovirone/InvestTracker-API" target="_blank" class="btn-link">Ver no GitHub <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </article>
+            <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-img">
+                    <img src="img_tools/calculadora1.jpg" alt="Calculadora">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Frontend</span>
+                    <h3>Calculadora Web</h3>
+                    <p style="font-size: 0.9rem; color: #64748b; margin: 10px 0;">Aplicação interativa para cálculos matemáticos básicos com interface responsiva.</p>
+                    <a href="calculadora.html" style="color:#ec4899; font-weight:700;">Testar &rarr;</a>
+                </div>
+            </article>
 
-          <article class="card_projeto">
-            <div class="card_img_wrapper">
-              <img src="img_tools/calculadora1.jpg" alt="Calculadora JS">
-            </div>
-            <div class="card_info">
-              <div>
-                  <h3>Calculadora Web</h3>
-                  <span class="tech-tag">JavaScript • DOM</span>
-                  <p>Aplicação interativa para cálculos matemáticos básicos com interface responsiva e lógica em tempo real.</p>
-              </div>
-              <a href="calculadora.html" class="btn-link">Testar Agora <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </article>
-
-          <article class="card_projeto">
-            <div class="card_img_wrapper">
-              <img src="img_tools/aluguel.jfif" alt="Venda de Carros">
-            </div>
-            <div class="card_info">
-              <div>
-                  <h3>Motors Vendas</h3>
-                  <span class="tech-tag">HTML • CSS Layout</span>
-                  <p>Plataforma para visualização de disponibilidade de veículos para venda e aluguel.</p>
-              </div>
-              <a href="CARROS.html" class="btn-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </article>
-
-          <article class="card_projeto">
-            <div class="card_img_wrapper">
-              <img src="img_tools/IMC1.jpg" alt="Calculadora IMC">
-            </div>
-            <div class="card_info">
-              <div>
-                  <h3>Calculadora IMC</h3>
-                  <span class="tech-tag">JavaScript Logic</span>
-                  <p>Ferramenta de saúde que calcula o Índice de Massa Corporal baseada nos inputs do usuário.</p>
-              </div>
-              <a href="IMC.html" class="btn-link">Calcular <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </article>
-
-          <article class="card_projeto">
-            <div class="card_img_wrapper">
-              <img src="img_tools/cardapio.webp" alt="Cardápio Digital">
-            </div>
-            <div class="card_info">
-              <div>
-                  <h3>Cardápio Digital</h3>
-                  <span class="tech-tag">Front-end UI</span>
-                  <p>Solução digital para a cantina do CEEP José Figueiredo Barreto, modernizando a escolha de lanches.</p>
-              </div>
-              <a href="cardapio.html" class="btn-link">Ver Menu <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </article>
+            <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-img">
+                    <img src="img_tools/aluguel.jfif" alt="Carros">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Design</span>
+                    <h3>Motors Vendas</h3>
+                    <p style="font-size: 0.9rem; color: #64748b; margin: 10px 0;">Plataforma visual para visualização de disponibilidade de veículos.</p>
+                    <a href="CARROS.html" style="color:#ec4899; font-weight:700;">Ver Detalhes &rarr;</a>
+                </div>
+            </article>
 
         </div>
       </div>
@@ -173,26 +144,26 @@ seguindo boas práticas de desenvolvimento backend.</p>
   </main>
 
   <footer id="fale_conosco">
-    <div class="footer_content">
-        <h3>Vamos construir algo juntos?</h3>
-        <p>Estou disponível para novos projetos e oportunidades de aprendizado.</p>
-        
-        <div class="footer_contact">
-        <div class="contact_item">
-            <i class="fas fa-envelope"></i>
-            <span>jovmamikl@gmail.com</span>
+    <div class="container">
+        <div class="footer-box" data-aos="zoom-in">
+            <h3>Vamos construir algo juntos?</h3>
+            <p style="margin-top:10px;">Entre em contato para discutirmos seu próximo projeto.</p>
+            <div class="footer-icons">
+                <a href="mailto:jovmamikl@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-phone"></i></a>
+                <a href="https://linkedin.com/in/joaovirone"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.7;">&copy; 2025 João Vitor. Todos os direitos reservados.</p>
         </div>
-        <div class="contact_item">
-            <i class="fas fa-phone"></i>
-            <span>(79) 98865-9849</span>
-        </div>
-        <div class="contact_item">
-            <i class="fab fa-linkedin"></i>
-            <span>/in/joaovirone</span> </div>
-        </div>
-        
-        <p style="font-size: 0.9rem; color: #cbd5e1;">&copy; 2025 João Vitor Pereira. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false,
+      duration: 800,
+    });
+  </script>
 </body>
 </html>
