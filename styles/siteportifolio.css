@@ -1,4 +1,4 @@
-/* --- CSS IMBUTIDO PARA EVITAR ERROS DE LAYOUT --- */
+
     
     /* Reset Básico */
     * {
@@ -7,11 +7,16 @@
         box-sizing: border-box;
     }
 
+    html {
+    scroll-behavior: smooth; /* A mágica da animação */
+    scroll-padding-top: 120px; /* Espaço para o menu não tapar o título */
+    }
+
     body {
         font-family: 'Plus Jakarta Sans', sans-serif;
         color: #1e293b;
         background-color: #f3f4f6;
-        overflow-x: hidden; /* Evita rolagem horizontal */
+        overflow-x: hidden; 
     }
 
     /* Fundo Animado GTA Style */
@@ -198,6 +203,7 @@
         justify-content: center;
         overflow: hidden;
     }
+    
 
     .card-img img { width: 100%; height: 100%; object-fit: cover; }
     .card-img i { font-size: 4rem; color: #8b5cf6; }
